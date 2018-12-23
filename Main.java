@@ -18,14 +18,14 @@ public class Main{
         double c = keyboard.nextDouble();
 
         if(a == 0 && b == 0){                   //if a and b are 0 parabola will be straight line
-            System.out.println("error: a or b val = 0");
+            System.out.println("error: a and b val = 0");
         }
         else {
+        
+        Polynomial poly = new Polynomial(a, b, c);  //creates instance of "Polynomial.java" using user input values
 
-            Polynomial poly = new Polynomial(a, b, c);  //creates instance of "Polynomial.java" using user input values
-
-            System.out.println(poly.toString());        // prints the created polynomial
-            System.out.println(poly.getVertex());       // prints the vertex of the polynomial
+        System.out.println(poly.toString());        // prints the created polynomial
+        System.out.println(poly.getVertex());       // prints the vertex of the polynomial
         }
 
 
